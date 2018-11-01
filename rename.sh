@@ -1,7 +1,7 @@
 #!/bin/bash
 set -eo pipefail
 
-TEMPLATE_DIR=py-project-template
+TEMPLATE_DIR=py-template-project
 
 replace_str(){
     declare projname="$1"
