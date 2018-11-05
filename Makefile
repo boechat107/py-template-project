@@ -22,7 +22,7 @@ check:
 # To be used on CIs.
 ci_mypy:
 	docker run --rm -v $(PWD):/app -w /app \
-	    grktsh/mypy --ignore-missing-imports --strict-optional lambdazome
+	    grktsh/mypy --ignore-missing-imports --strict-optional __project-name__
 	docker run --rm -v $(PWD):/app -w /app --entrypoint sh \
 	    grktsh/mypy -c "rm -rf .mypy_cache"
 
