@@ -1,9 +1,10 @@
 import fire
+from loguru import logger as log
 
 
 def adder(x: int, y: int) -> int:
     s = x + y
-    print("sum: %s" % s)
+    log.debug("sum: {}", s)
     return s
 
 

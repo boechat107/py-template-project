@@ -3,7 +3,8 @@ from setuptools import setup, find_packages
 VERSION = '0.1.0'
 
 DEPENDENCIES = [
-    'fire==0.1.2',
+    'fire==0.1.3',
+    'loguru==0.2.5'
 ]
 
 config = {
